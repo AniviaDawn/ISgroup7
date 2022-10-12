@@ -22,7 +22,7 @@ import java.util.List;
 import static com.group7.isgroup7.utils.JsonUtils.Json;
 
 @RestController
-@RequestMapping("/group7/course")
+@RequestMapping("/back-end/course")
 public class CourseController {
     @Autowired
     private CourseService courseService;

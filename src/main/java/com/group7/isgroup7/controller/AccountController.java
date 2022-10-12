@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import static com.group7.isgroup7.utils.JsonUtils.Json;
 
 @RestController
-@RequestMapping("/group7/account")
+@RequestMapping("/back-end/account")
 public class AccountController {
     @Autowired
     private AccountService accountService;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/group7/js/jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+        $(function (){
+            $("#btn").click(function (){
+                var account = $("account").val();
+                var password = $("password").val();
+                var number = $("number").val();
+                var jsonData = {
+                    "account":account,
+                    "password":password,
+                    "number":number
+                };
+                var json2={
+                    "account": "asasda",
+                    "password": "asdasd",
+                    "identity": 29,
+                    "role": 82,
+                    "number": "26",
+                    "avatar": 28
+                };
+                $.ajax("http://localhost:8080/group7/back-end/account/register",{
+                    type:"post",
+                    data:JSON.stringify(json2),
+                    dataType:"json",
+                    success:function (data){
+                        alert(data.msg)
+                    },
+                    contentType:'application/json'
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+<h1>Register</h1>
+<br>
+account<input type="text" id="account">
+<br>
+password<input type="password" id="password">
+<br>
+number<input type="text" id="number">
+<br>
+<button id="btn">submit</button>
+</body>
+</html>
