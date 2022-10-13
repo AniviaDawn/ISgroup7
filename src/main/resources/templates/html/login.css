@@ -49,7 +49,7 @@ input {
     left: calc(50vw - 250px);
     text-align: center;
 }
-
+div {font-family: "Times New Roman",Arial, Helvetica, sans-serif}
 button {
     border: none;
     border-radius: 9px;
