@@ -3,8 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit Your Course</title>
+    <link rel="stylesheet" type="text/css" href="edit.css">
 </head>
 <body>
+<div>
+    <div id="title_line">
+        <div id="titlebox">
+            <div id="title">School Courses Catalog</div>
+            <div id="teacher_or_student">Teacher</div>
+        </div>
+        <div id="search_box">
+            <input type="text" name="search" placeholder="Search the course">
+            <button style="width: 40px">搜索</button>
+        </div>
+        <div id="user"><div id="account">Account Name</div><button id="logout">Log out</button></div>
 
+    </div>
+<!--    顶行-标题-搜索框，用户中心和退出按钮-->
+
+    <div id="basic_information">
+        <div id="basic_information_text">
+            <div class="l1"><div style="min-width: 100px; margin: 0 10px"> Course Name</div>  <input class="l2" placeholder="Enter course‘s name"></div>
+            <div class="l1"><div style="min-width: 100px; margin: 0 10px" >Credit Hours</div> <input class="l2" placeholder="Enter credit hours"></div>
+        </div>
+        <div id="basic_information_pict">
+        <img src="cloud.png" width=50px>
+            <!--！！！！！用js做一个隐藏的input在这里，然后点击这块区域上传封面，并替换掉该图片！！！！！！！-->
+
+        </div>
+    </div>
+<!--    课程名称，学时以及课程封面图片-->
+    <div id="briefinfo">
+        <div style="min-width: 300px">Brief description of the course</div>
+        <input type="text" id="briefinfotext">
+    </div>
+<!--    课程简介-->
+    <div id="file"><img src="file.png" width=40px style="margin: 10px
+">  <input type="file"></div>
+    <div id="button_box">
+        <button class="summit" style="background-color: lightcoral">Cancel</button>
+        <button class="summit" style="background-color: lightgreen">Creat</button>
+    </div>
+<!--    文件上传以及按钮-->
+</div>
 </body>
 </html>
