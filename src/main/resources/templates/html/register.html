@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="/group7/js/jquery-3.6.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="register.css">
     <script type="text/javascript">
         $(function (){
             $("#btn").click(function (){
@@ -36,15 +37,43 @@
         })
     </script>
 </head>
-<body>
-<h1>Register</h1>
-<br>
-account<input type="text" id="account">
-<br>
-password<input type="password" id="password">
-<br>
-number<input type="text" id="number">
-<br>
-<button id="btn">submit</button>
+<body >
+<!--<h1>Register</h1>-->
+<!--<br>-->
+<!--account<input type="text" id="account">-->
+<!--<br>-->
+<!--password<input type="password" id="password">-->
+<!--<br>-->
+<!--number<input type="text" id="number">-->
+<!--<br>-->
+<!--<button id="btn">submit</button>-->
+<div class="register_box" id="register_box">
+    <h1>Welcome to register</h1>
+    <div class="d1">Account name</div>
+    <input type="text" id="account" name="account" placeholder="Enter Account Name">
+    <div class="d1">Password</div>
+    <input type="password" id="password" name="password" placeholder="Enter Password">
+
+    <div class="d1">Comfirm your password</div>
+    <input type="password" id="comfirm_password" name="password" placeholder="Enter Password Again">
+
+    <div class="d1">E-mail address (to find back your password)</div>
+    <input type="password" id="E-mail" name="E-mail" placeholder="Enter Your E-mail">
+
+    <div class="d1">Select your identity</div>
+    <select type="" id="select_identity" name="select_identity">
+        <option>Student</option>
+        <option>Teacher</option>
+    </select>
+
+    <div class="d2">
+        <button>Login</button>
+        <button>Register</button>
+    </div>
+    <div class="d2" style="padding: 0;">
+        <a href="https://reg.jiayuan.com/signup/fillbasic.php?bd=5410&province=33&degree=30&marriage=1&height=170&degree=30" id="signup">I have created the account, go to the login page!</a>
+        <!--记得把超链接换成登录界面-->
+    </div>
+</div>
 </body>
 </html>

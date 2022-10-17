@@ -4,7 +4,7 @@
     font-size: 14px;
     font-family: "microsoft yahei";
 }
-
+*{font-family: "Times New Roman",Arial, Helvetica, sans-serif}
 body {
     background-color: #f8f8f8;
 }
@@ -16,7 +16,9 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    min-width: 300px;
+
+
 }
 
 .topnav a {
@@ -25,7 +27,10 @@ body {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    min-height: 60px;
+    min-width: 150px;
     text-decoration: none;
+    line-height: 30px;
 }
 
 .topnav a:hover {
@@ -34,7 +39,6 @@ body {
 }
 
 .header .logo {
-    background: url(../img/logo2.png) no-repeat;
     height: 70px;
     font-size: 26px;
     color: #FFFFFF;
@@ -46,15 +50,18 @@ body {
 }
 
 .header .user {
-    height: 70px;
+
+    width: 120px;
+    height: 60px;
     color: #FFFFFF;
-    line-height: 70px;
+    line-height: 60px;
     font-weight: 700;
     float: right;
     margin-right: 20px;
     font-size: 16px;
-    padding: 0px 15px;
+    margin: 0 15px;
     cursor: pointer;
+    text-align: center;
 }
 
 .header .user .point {
@@ -78,6 +85,7 @@ body {
 
 .header .user ul li {
     height: 40px;
+    width: 120px;
     line-height: 40px;
     border-bottom: 1px dotted #CCCCCC;
 }
@@ -88,11 +96,13 @@ body {
     font-weight: normal;
     text-decoration: none;
     display: block;
-    padding: 0px 20px;
+    min-width: 120px;
+
 }
 
 .header .user ul li a:hover {
     background-color: #f2f7ff;
+
 }
 
 .left {

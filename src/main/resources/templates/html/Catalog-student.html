@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <title>School Courses Catalog-student</title>
+  <link rel="stylesheet" type="text/css" href="edit.css">
   <link rel="stylesheet" href="styles.css" />
   <script type="text/javascript">
         $(function() {
@@ -23,21 +24,29 @@
 </head>
 
 <body>
-<div class="header">
-  <div class="logo">School Courses Catalog</div>
-  <div class="user">
-    <i></i>student
-    <ul>
-      <li><a href="javascript:void(0)" onclick="window.location.href='{{url_for('#')}}'">修改密码</a></li>
-      <li><a href="javascript:void(0)" onclick="window.location.href='{{url_for('#')}}'">退出登录</a></li>
-    </ul>
+
+<div id="title_line" class="header">
+  <div id="titlebox">
+    <div id="title">School Courses Catalog</div>
+    <div id="teacher_or_student">Student</div>
   </div>
-</div>
-<div class="topnav">
-  <a href="#">Course management</a>
-  <a href="#">Course details</a>
-  <div style="float:right">
-    <input placeholder=" 请输入关键字 "><button>search</button>
+  <div class="topnav">
+    <a href="#">Course management</a>
+    <a href="#">Course details</a>
+  </div>
+
+
+  <div id="search_box">
+    <input type="text" name="search" placeholder="Search the course">
+    <button style="width: 60px">Search</button>
+  </div>
+
+  <div class="user">
+    Student A
+    <ul>
+      <li><a href="javascript:void(0)" onclick="window.location.href='{{url_for('')}}'">Change password</a></li>
+      <li><a href="javascript:void(0)" onclick="window.location.href='{{url_for('')}}'">Log out</a></li>
+    </ul>
   </div>
 </div>
 

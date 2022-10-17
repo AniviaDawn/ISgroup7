@@ -22,37 +22,32 @@
 </head>
 
 <body>
-<!--<div>
-<div id="title_line">
+<div id="title_line" class="header">
     <div id="titlebox">
         <div id="title">School Courses Catalog</div>
         <div id="teacher_or_student">Teacher</div>
     </div>
+    <div class="topnav">
+    <a href="#">Course management</a>
+    <a href="#">Course details</a>
+    </div>
+
+
     <div id="search_box">
         <input type="text" name="search" placeholder="Search the course">
-        <button style="width: 40px">搜索</button>
+        <button style="width: 60px">Search</button>
     </div>
-    <div id="user"><div id="account">Account Name</div><button id="logout">Log out</button></div>
 
-</div>
-顶行-标题-搜索框，用户中心和退出按钮-->
-<div class="header">
-    <div class="logo">School Courses Catalog</div>
     <div class="user">
-        <i></i>teacher
+        teacher
         <ul>
-            <li><a href="javascript:void(0)" onclick="window.location.href='{{url_for('')}}'">修改密码</a></li>
-            <li><a href="javascript:void(0)" onclick="window.location.href='{{url_for('')}}'">退出登录</a></li>
+            <li><a href="javascript:void(0)" onclick="window.location.href='{{url_for('')}}'">Change password</a></li>
+            <li><a href="javascript:void(0)" onclick="window.location.href='{{url_for('')}}'">Log out</a></li>
         </ul>
     </div>
 </div>
-<div class="topnav">
-    <a href="#">Course management</a>
-    <a href="#">Course details</a>
-    <div style="float:right">
-        <input placeholder=" 请输入关键字 "><button>search</button>
-    </div>
-</div>
+
+<!--顶行-标题-搜索框，用户中心和退出按钮-->
 
 <div id="basic_information">
     <div id="basic_information_text">
@@ -73,16 +68,14 @@
     <input type="text" id="briefinfotext">
 </div>
 <!--    课程简介-->
-<div id="file"><img src="file.png" width=40px style="margin: 10px
-"> <input type="file"></div>
-<div id="button_box">
-    <button class="summit" style="background-color: lightcoral">Cancel</button>
-    <button class="summit" style="background-color: lightgreen">Creat</button>
-</div>
-<!--    文件上传以及按钮-->
-</div>
-<div>
-    <style>
+    <div id="file">
+        <img src="file.png" width=40px style="margin: 10px">
+        <input type="file">
+    </div>
+
+
+    <div style="min-width: 600px ; margin:25px">
+        <style>
             table,
             td,
             th {
@@ -97,35 +90,42 @@
                 height: 50px;
             }
         </style>
-    <table>
         <table>
-            <thead>
-            <tr>
-                <th>Chapter</th>
-                <th>File</th>
-                <th>Operate</th>
-            </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>
-                    <button>delete</button>
+            <table>
+                <thead>
+                <tr>
+                    <th>Chapter</th>
+                    <th>File</th>
+                    <th>Operate</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td style="width: 50%">Chapter1:introduction</td>
+                    <td style="width: 30%">Chapter1:introduction.word</td>
+                    <td style="width: 20%;text-align: center">
+                        <button>delete</button>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <td style="text-align: center">
+                    <button>first page</button>
+                    <button>last page</button>
+                    <button>next page</button>
+                    <button>trailer page</button>
+                    <input style="width: 20px" value="1 " />
+                    <button>turn</button>
                 </td>
-            </tr>
+            </table>
         </table>
-        <table>
-            <td>
-                <button>first page</button>
-                <button>last page</button>
-                <button>next page</button>
-                <button>trailer page</button>
-                <input value="1 " />
-                <button>turn</button>
-            </td>
-        </table>
-    </table>
-</div>
+    </div>
+
+    <div id="button_box">
+        <button class="summit" style="background-color: lightcoral">Cancel</button>
+        <button class="summit" style="background-color: lightgreen">Creat</button>
+    </div>
+<!--    文件上传以及按钮-->
+
 </body>
 
 </html>

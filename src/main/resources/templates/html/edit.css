@@ -22,10 +22,13 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     min-width: 100vw;
+    background-color: #b81d18;
 }
 #title{
     font-size: 30px;
     min-width: 300px;
+    color: white;
+    text-shadow: 2px 2px #000000;
 }
 #logout{
     width: 80px;
@@ -40,14 +43,14 @@ body {
 #teacher_or_student{
     text-align: end;
     width: 280px;
-    color: gray;
+    color: #CCCCCC;
+    text-shadow:2px 2px #000000;
 }
-#search_box{
+#search_box {
     width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 #account{
     min-width: 100px;
@@ -59,16 +62,20 @@ body {
     padding: 15px
 }
 #basic_information{
-    justify-content: space-between;
+    /*justify-content: center;*/
     display: flex;
     flex-wrap: nowrap;
+
 
 }
 #basic_information_text{
     min-width: 500px;
+
+    margin: 30px 10px;
 }
 #basic_information_pict{
     width: 300px;
+    margin: 30px 10% ;
 }
 .l1{
     margin-bottom: 10px;
@@ -81,11 +88,12 @@ body {
     width: 500px;
 }
 #briefinfo{
-    width: 100vw;
+    width: calc(100vw - 40px);
+
     margin:20px 20px;
 }
 #briefinfotext{
-    width: 100vw;
+    width: 100%;
     min-height: 100px;
 }
 #file{
