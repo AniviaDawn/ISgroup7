@@ -362,3 +362,10 @@ th {
     border-radius: 4px;
     cursor: pointer;
 }
+
+.switch_student{
+    background-color: #d3e6d3;
+}
+.switch_teacher{
+    background-color: #fdf0cb;
+}
